@@ -10,6 +10,13 @@ use PHPUnit\Framework\TestCase;
 
 class WordCountTest extends TestCase
 {
+    /**
+     * Test untuk menghitung apakah fungsi countWords telah sesuai
+     *
+     * Kelas wordcount diinisialisasi menggunakan fungsi new WordCount
+     * Kemudian memanggil fungsi countWords dengan parameter kalimat
+     * Jumlah kata ditest harus sejumlah 4 dengan assertion
+     */
     public function testCountWords()
     {
         $wc = new WordCount;
